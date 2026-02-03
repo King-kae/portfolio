@@ -42,7 +42,7 @@ export const HeroSection = React.memo(function HeroSection() {
             <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-6">
               {portfolioData.name}
             </h1>
-            <h2 className="text-2xl md:text-4xl text-slate-400 mb-6 bg-gradient-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent font-semibold">
+            <h2 className="text-2xl md:text-4xl mb-6 bg-linear-to-r from-slate-100 to-slate-400 bg-clip-text text-transparent font-semibold">
               {portfolioData.role}
             </h2>
 
@@ -65,7 +65,7 @@ export const HeroSection = React.memo(function HeroSection() {
                 </Link>
 
                 <Link
-                  href="/files/resume.pdf"
+                  href="/files/myresume.pdf"
                   target="_blank"
                   className="w-42 px-8 py-3 border-2 border-slate-700 text-slate-300 font-bold rounded-full hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
                 >
@@ -84,13 +84,13 @@ export const HeroSection = React.memo(function HeroSection() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 group perspective-1000">
               {/* Deep Glow Background */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/40 to-secondary/40 rounded-[2rem] rotate-6 scale-105 blur-2xl opacity-40 group-hover:opacity-60 transition-all duration-500" />
+              <div className="absolute inset-0 bg-linear-to-tr from-primary/40 to-secondary/40 rounded-4xl rotate-6 scale-105 blur-2xl opacity-40 group-hover:opacity-60 transition-all duration-500" />
 
               {/* Second Layer (Rotated Card) */}
-              <div className="absolute inset-0 bg-slate-800/80 backdrop-blur-sm rounded-[2rem] rotate-3 border border-white/10 group-hover:rotate-6 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-slate-800/80 backdrop-blur-sm rounded-4xl rotate-3 border border-white/10 group-hover:rotate-6 transition-transform duration-500" />
 
               {/* Main Image Container with Gradient Border */}
-              <div className="relative w-full h-full rounded-[2rem] p-[2px] bg-gradient-to-br from-primary to-secondary -rotate-3 group-hover:rotate-0 transition-transform duration-500 shadow-2xl">
+              <div className="relative w-full h-full rounded-4xl p-0.5 bg-linear-to-br from-primary to-secondary -rotate-3 group-hover:rotate-0 transition-transform duration-500 shadow-2xl">
                 <div className="w-full h-full rounded-[calc(2rem-2px)] overflow-hidden bg-slate-900 relative">
                   {/* Use a placeholder if image fails or is missing */}
                   <div className="w-full h-full flex items-center justify-center text-slate-500 bg-slate-800 relative">

@@ -24,7 +24,7 @@ export const ProjectCard = React.memo(function ProjectCard({
       className="group relative bg-slate-800/30 rounded-2xl overflow-hidden border border-slate-800 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-2 flex flex-col"
     >
       {/* Image Container */}
-      <div className="relative aspect-video w-full overflow-hidden flex-shrink-0">
+      <div className="relative aspect-video w-full overflow-hidden shrink-0">
         <Image
           src={project.thumbnail}
           alt={project.title}
@@ -37,9 +37,18 @@ export const ProjectCard = React.memo(function ProjectCard({
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="text-xl font-bold text-slate-100 mb-2 group-hover:text-primary transition-colors">
-          {project.title}
-        </h3>
+        <div className="flex">
+          <h3
+            className={`text-xl font-bold text-slate-100 mb-2 transition-colors ${project.hoverColor ? `group-hover:text-ostivities-primary` : "group-hover:text-primary"}`}
+          >
+            {project.title}
+          </h3>
+          {project.end && (
+            <span className="text-xs max-h-6 font-medium text-slate-300 bg-slate-800 px-2 py-1 rounded-full">
+              {project.end}
+            </span>
+          )}
+        </div>
         <p className="text-slate-400 text-sm mb-4 line-clamp-6">
           {project.description}
         </p>

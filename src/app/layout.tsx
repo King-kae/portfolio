@@ -94,14 +94,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [
-      {
-        url: "/icons/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/icons/apple-touch-icon.png",
-    shortcut: "/favicon.ico",
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
 };
 
@@ -122,7 +117,9 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-screen pt-20">{children}</main>
         <Footer />
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ""} />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ""}
+        />
       </body>
     </html>
   );

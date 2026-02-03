@@ -91,9 +91,8 @@ export function Navbar() {
         <Link
           href="#about"
           onClick={(e) => handleNavClick(e, "#about")}
-          className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent"
-        >
-          Vipul<span className="text-white"> Jha</span>.
+          className="text-2xl font-bold bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent" >
+          Kayode<span className="text-white"> R</span>.
         </Link>
 
         {/* Desktop Nav */}
@@ -116,7 +115,7 @@ export function Navbar() {
                 {isActive && (
                   <motion.div
                     layoutId="activeSection"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-primary to-secondary"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-linear-to-r from-primary to-secondary"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}

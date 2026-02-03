@@ -7,6 +7,8 @@
 
   /* Modern Professional Palette - Teal & Sky */
   --primary: #2dd4bf;
+  /* ostivities */
+  --ostivities-primary: #e20000;
   /* Teal 400 */
   --secondary: #0ea5e9;
   /* Sky 500 */
@@ -21,6 +23,7 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
+  --color-ostivities-primary: var(--ostivities-primary);
   --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);

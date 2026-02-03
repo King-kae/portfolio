@@ -116,7 +116,7 @@ export const ContactSection = React.memo(function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-slate-500">Based in</p>
-                  <p className="font-medium">Delhi, India</p>
+                  <p className="font-medium">Lagos, Nigeria</p>
                 </div>
               </div>
             </div>
@@ -198,7 +198,7 @@ export const ContactSection = React.memo(function ContactSection() {
                 <div className="flex items-center gap-2 text-green-400 bg-green-400/10 border border-green-400/20 rounded-lg px-4 py-3">
                   <TbCircleCheck size={20} />
                   <span>
-                    Message sent successfully! I'll get back to you soon.
+                    Message sent successfully! I&apos;ll get back to you soon.
                   </span>
                 </div>
               )}
@@ -213,7 +213,7 @@ export const ContactSection = React.memo(function ContactSection() {
               <button
                 type="submit"
                 disabled={formState === "loading"}
-                className="w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-primary/25 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full bg-linear-to-r from-primary to-secondary text-white font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-primary/25 transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {formState === "loading" ? (
                   <>Sending...</>

@@ -1,3 +1,5 @@
+import { CSSProperties } from "react";
+
 export interface SocialLink {
   platform: string;
   url: string;
@@ -23,7 +25,9 @@ export interface Project {
   techStack: string[];
   link?: string;
   github?: string;
+  end?: string;
   thumbnail: string;
+  hoverColor?: React.CSSProperties;
 }
 
 export interface PortfolioData {
@@ -34,7 +38,6 @@ export interface PortfolioData {
   blogUrl?: string;
   social: SocialLink[];
   skills: {
-    mobile: string[];
     libraries: string[];
     web: string[];
     tools: string[];
@@ -44,147 +47,149 @@ export interface PortfolioData {
 }
 
 export const portfolioData: PortfolioData = {
-  name: "Vipul Jha",
-  role: "Android & Flutter Developer",
-  about:
-    "I’m an Android Developer with 4+ years of experience creating high-quality mobile applications. My expertise spans Java, Kotlin, Jetpack Compose, and modern Android architecture, with additional experience in Flutter for cross-platform development. I’ve also worked extensively with AOSP and Chromium, giving me a strong foundation across both software and system-level development.",
-  profileImage: "/images/profile.webp",
-  blogUrl: "https://medium.com/@lordarcadius",
+  name: "Kayode Raimi",
+  role: "FullStack Developer",
+  about: `Aspiring Full Stack Developer with foundational skills in front-end (HTML, CSS, JavaScript, React/Vue.js,
+    Next.js) and back-end (Node.js, Express, MongoDB, SQL) technologies. Eager to build on my
+    experience, learn new tools, and contribute to creating scalable web applications while collaborating
+    with cross-functional teams.`,
+  profileImage: "/images/kayode.jpg",
+  blogUrl: "",
   social: [
     {
       platform: "GitHub",
-      url: "https://github.com/lordarcadius",
+      url: "https://github.com/King-kae",
       icon: "Github",
     },
     {
       platform: "LinkedIn",
-      url: "https://linkedin.com/in/lordarcadius",
+      url: "https://www.linkedin.com/in/kayode-raimi-32a640218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       icon: "Linkedin",
     },
     {
       platform: "X",
-      url: "https://x.com/lordarcadius",
+      url: "https://x.com/kingkae_001?s=21",
       icon: "Twitter", // Lucide might not have X yet, using Twitter as fallback or X if available in next step
     },
-    {
-      platform: "Instagram",
-      url: "https://instagram.com/lordarcadius",
-      icon: "Instagram",
-    },
-    {
-      platform: "Medium",
-      url: "https://medium.com/@lordarcadius",
-      icon: "BookText", // Using BookText as a generic icon for Medium if branded one is missing
-    },
+    // {
+    //   platform: "Instagram",
+    //   url: "https://instagram.com/lordarcadius",
+    //   icon: "Instagram",
+    // },
+    // {
+    //   platform: "Medium",
+    //   url: "https://medium.com/@lordarcadius",
+    //   icon: "BookText", // Using BookText as a generic icon for Medium if branded one is missing
+    // },
     {
       platform: "Email",
-      url: "mailto:hey@vipuljha.com",
+      url: "mailto:kayode.raimi123@gmail.com",
       icon: "Mail",
     },
   ],
   skills: {
-    mobile: [
-      "Kotlin",
-      "Java",
-      "Jetpack Compose",
-      "Flutter",
-      "Dart",
-      "Android SDK",
-      "AOSP",
-    ],
     libraries: [
-      "Hilt",
-      "Retrofit",
-      "Room",
-      "Coroutines",
-      "Flow",
-      "Bloc",
-      "GetIt",
+      "React",
+      "NextJS",
+      "Vue.js",
+      // "Coroutines",
     ],
     web: [
       "REST APIs",
-      "AWS Lambda",
-      "Firebase",
-      "Supabase",
+      "Node.js",
       "MySQL",
-      "SQLite",
-      "Cloudflare",
-      "AWS S3",
+      "Express.js",
+      "MongoDB",
+      // "Cloudflare",
+      "TypeScript",
       "JavaScript",
       "HTML",
       "CSS",
+      "Cypress",
+      "Jest"
     ],
-    tools: ["Git", "Android Studio", "Postman", "VS Code", "IntelliJ IDEA"],
+    tools: ["Git", "Postman", "VS Code", "GitHub"],
   },
   experience: [
     {
-      company: "Primebook India",
-      role: "Senior Software Engineer (SDE-2)",
-      period: "May, 2023 - Present",
+      company: "Ostivities",
+      role: "Frontend Developer",
+      period: "Aug 2024 - Present",
       description: [
-        "Built PrimeSecure MDM for PrimeOS 3.0, leveraging DevicePolicyManager.",
-        "Enhanced Prime Browser with feaures like background playback, MDM, etc.",
-        "Created SOPs and Scripts for syncing, managing and building Chromium.",
-        "Migrated App Store storage to Cloudflare R2, saving over $2000/month.",
-        "Developed internal APIs, tools, & the early Cloud PC backend with Cashfree PG.",
+        "Translated Figma designs into responsive, high-quality user interfaces.",
+        "Developed and integrated reusable frontend components and consumed REST APIs.",
+        "Wrote unit and end-to-end tests to ensure reliability of critical features.",
       ],
     },
     {
-      company: "Primebook India",
-      role: "Android Engineer",
-      period: "Sep, 2021 - May, 2023",
+      company: "LeadingAlpha",
+      role: "Frontend Developer (Independent Project)",
+      period: "2025",
       description: [
-        "Built the PikaPika MDM dashboard in Flutter Web.",
-        "Developed PrimeOS apps including Game Center and App Store.",
-        "Initiated the PrimeOS Browser project and maintained it.",
-        "Worked on APIs supporting PrimeOS MDM and system services.",
+        "Designed and developed the LeadingAlpha website independently from concept to deployment.",
+        "Implemented Figma designs into a fully responsive and production-ready web application.",
+        "Integrated MongoDB for data storage and management.",
+        "Configured deployment and hosting using Cloudflare and GoDaddy, including domain setup and performance optimization.",
+      ],
+    },
+    {
+      company: "Stackron",
+      role: "Intern - Frontend Developer",
+      period: "Feb 2025 - Jul 2025",
+      description: [
+        "Implemented the doctor's profile page UI based on provided Figma designs.",
+        "Integrated the corresponding API for the doctor's profile page",
+        "Built and maintained admin dashboard pages, ensuring consistency and usability.",
+        "Collaborated with team members to refine UI behavior and improve user experience.",
       ],
     },
   ],
   projects: [
     {
-      title: "Covid-19 Status",
+      title: "Ostivities",
       description:
-        "COVID-19 Status is a free and open-source Android app that provides real-time COVID-19 statistics across India and worldwide, featuring a clean, fast, and responsive user interface.",
-      techStack: ["Java", "XML", "Firebase", "Rest APIs"],
-      link: "https://project.vipuljha.com/covid",
-      github: "https://github.com/Coders-Of-XDA-OT/covid19-status-android",
-      thumbnail: "/images/projects/covid.webp",
+        "A full-featured event management and ticketing platform designed to help organizers publish events and drive ticket sales through an intuitive web interface.",
+      techStack: ["NextJS", "MongoDB", "Rest APIs", "TailwindCSS"],
+      link: "https://www.ostivities.com/",
+      github: "https://github.com/Ostivities",
+      thumbnail: "/images/projects/ostivities.png",
+      hoverColor: { color: "#e20000" },
     },
     {
-      title: "ElectraBlue Kernel",
+      title: "Chatter",
       description:
-        "ElectraBlue is a flash-and-forget custom kernel for supported Android devices, built to deliver a stable, smooth, and battery-efficient experience with thoughtful customization options using apps like Kernel Adiutor.",
-      techStack: ["Linux", "C", "Makefile", "Bash"],
-      link: "https://xdaforums.com/t/kernel-mido-oreo-pie-electrablue-kernel-21-0-july-06-redmi-note-4.3655651",
-      github: "https://github.com/lordarcadius/electrablue_mido",
-      thumbnail: "/images/projects/eb.webp",
+        "Chatter is a blogging and content-publishing platform where users can create, publish, and explore written content in a streamlined digital environment.",
+      techStack: ["NextJS", "MongoDB", "NextAuth", "TailwindCSS"],
+      link: "https://nextjs-chatter-teal.vercel.app/",
+      github: "https://github.com/King-kae/nextjs-chatter",
+      thumbnail: "/images/projects/chatter.png",
     },
     {
       title: "Portfolio Website",
       description:
         "A previous version of my personal portfolio website showcasing my projects, work experience, and resume before launching the further iterations built in more modern tech stack.",
-      techStack: ["HTML", "CSS", "Bootstrap", "JQuery"],
+      techStack: ["NextJS", "Bootstrap", "JQuery"],
       link: "https://project.vipuljha.com/website",
-      github: "https://github.com/lordarcadius/website",
-      thumbnail: "/images/projects/portfolio.webp",
+      github: "https://github.com/King-kae/",
+      thumbnail: "/images/projects/portfolio.png",
     },
     {
-      title: "ABS Tweaks",
+      title: "GitHub Repository",
       description:
-        "ABS Tweaks (Arkaynine Boost Script) is a collection of shell-based performance optimizations for Android devices, designed to improve speed and battery life. It has been downloaded over 200,000 times.",
-      techStack: ["Shell", "BusyBox", "Terminal Emulator", "SuperSU"],
-      link: "https://xdaforums.com/t/tweak-mod-arm-x86-project-dark-booster-abs-tweaks-v5-0-2-3-6-0-23-01-2016.3120404",
-      github: "https://github.com/lordarcadius/ABS-Tweaks",
-      thumbnail: "/images/projects/abs.webp",
+        "A personal GitHub portfolio website that dynamically showcases my repositories, project details, and development activity through the GitHub API.",
+      techStack: ["React", "HTML", "TailwindCSS"],
+      link: "https://alt-school-assignment-ss.vercel.app/",
+      github: "https://github.com/King-kae/AltSchool-Assignment-SS-",
+      thumbnail: "/images/projects/repos.png",
     },
     {
-      title: "Lenovo SNAPit Camera",
+      title: "Authentication and Authorization",
       description:
-        "Lenovo SNAPit Camera was one of the most feature-rich OEM camera apps of its time, offering a wide range of unique capabilities. I successfully ported it to run on nearly all supported Android devices back then.",
-      techStack: ["Java", "XML", "Libs", "Smali", "Apktool"],
-      link: "https://xdaforums.com/t/app-port-6-0-lenovo-snapit-camera-5-8-53-for-all-devices.3608065/",
-      github: "",
+        "A RESTful backend API implementing secure authentication and authorization using Passport.js, including local strategy and third-party OAuth (Google and GitHub). The service enables authenticated users to create and manage book resources via protected routes.",
+      techStack: ["NodeJS", "ExpressJS", "ejs"],
+      // link: "https://xdaforums.com/t/app-port-6-0-lenovo-snapit-camera-5-8-53-for-all-devices.3608065/",
+      github: "https://github.com/King-kae/Authentication-and-Authorization",
+      end: "backend",
       thumbnail: "/images/projects/snapit.webp",
     },
     {
