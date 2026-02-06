@@ -56,6 +56,7 @@ export const ContactSection = React.memo(function ContactSection() {
       } catch (error) {
         setFormState("error");
         setTimeout(() => setFormState("idle"), 5000);
+        console.log(error)
       }
     },
     [formData]

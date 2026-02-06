@@ -27,7 +27,7 @@ export const ExperienceSection = React.memo(function ExperienceSection() {
             className="relative"
           >
             {/* Timeline Dot */}
-            <span className="absolute -left-[41px] top-0 h-5 w-5 rounded-full bg-slate-950 border-2 border-primary" />
+            <span className="absolute -left-10.25 top-0 h-5 w-5 rounded-full bg-slate-950 border-2 border-primary" />
 
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
               <h3 className="text-xl font-bold text-slate-100">{exp.role}</h3>

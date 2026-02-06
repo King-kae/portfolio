@@ -108,7 +108,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <StructuredData />
+        <link rel="icon" href="/logo.png" type="image/png" />
+        {/* <StructuredData /> */}
       </head>
       <body
         suppressHydrationWarning

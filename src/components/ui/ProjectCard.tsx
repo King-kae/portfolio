@@ -37,7 +37,7 @@ export const ProjectCard = React.memo(function ProjectCard({
 
       {/* Content */}
       <div className="p-6 flex flex-col flex-1">
-        <div className="flex">
+        <div className="flex justify-between gap-2">
           <h3
             className={`text-xl font-bold text-slate-100 mb-2 transition-colors ${project.hoverColor ? `group-hover:text-ostivities-primary` : "group-hover:text-primary"}`}
           >

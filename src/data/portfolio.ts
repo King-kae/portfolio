@@ -1,4 +1,3 @@
-import { CSSProperties } from "react";
 
 export interface SocialLink {
   platform: string;
@@ -186,20 +185,21 @@ export const portfolioData: PortfolioData = {
       title: "Authentication and Authorization",
       description:
         "A RESTful backend API implementing secure authentication and authorization using Passport.js, including local strategy and third-party OAuth (Google and GitHub). The service enables authenticated users to create and manage book resources via protected routes.",
-      techStack: ["NodeJS", "ExpressJS", "ejs"],
+      techStack: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
       // link: "https://xdaforums.com/t/app-port-6-0-lenovo-snapit-camera-5-8-53-for-all-devices.3608065/",
       github: "https://github.com/King-kae/Authentication-and-Authorization",
       end: "backend",
-      thumbnail: "/images/projects/snapit.webp",
+      thumbnail: "/images/projects/node.png",
     },
     {
-      title: "CyanogenOS Apps",
+      title: "PropTech API(incomplete)",
       description:
-        "CyanogenOS 12.1 included exclusive apps such as the updated theme engine and a Truecaller-integrated dialer. I successfully ported these features to work on CyanogenMod 13 and CyanogenMod13-based ROMs.",
-      techStack: ["Java", "Libs", "Updater Script", "Apktool"],
-      link: "https://xdaforums.com/t/c-apps-v2-unofficial-6-0-x-cyanogen-os-capps-v2-for-cm13-and-cm13-based-roms.3254865/",
-      github: "",
-      thumbnail: "/images/projects/capps.webp",
+        "Built scalable backend services for a real-estate platform, enabling property owners to publish listings and facilitating property search and selection for potential clients.",
+      techStack: ["NodeJS", "ExpressJS", "MongoDB"], 
+      // link: "https://xdaforums.com/t/c-apps-v2-unofficial-6-0-x-cyanogen-os-capps-v2-for-cm13-and-cm13-based-roms.3254865/",
+      github: "https://github.com/King-kae/Group-45-Capstone-Project-Backend",
+      end: "backend",
+      thumbnail: "/images/projects/node.png",
     },
   ],
 };
