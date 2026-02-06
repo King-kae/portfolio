@@ -23,35 +23,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.vipuljha.com"),
+  metadataBase: new URL("https://portfolio-king-kaes-projects.vercel.app"),
   title: {
     template: `%s | ${portfolioData.name}`,
     default: `${portfolioData.name} - ${portfolioData.role}`,
   },
   description: portfolioData.about,
   keywords: [
-    "Android Developer",
-    "Flutter Developer",
-    "Kotlin Developer",
-    "Jetpack Compose",
-    "Mobile App Development",
-    "AOSP Developer",
-    "Chromium Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "MongoDB",
+    "NextJS",
+    "ReactJS",
+    "NodeJS",
+    "TailwindCSS",
     "Portfolio",
     "Next.js Portfolio",
-    "Vipul Jha",
-    "lordarcadius",
-    "vipul jha xda",
-    "Primebook",
-    "Primebook India",
-    "Senior Software Engineer",
-    "SDE-2",
-    "Android Engineer",
-    "Android",
-    "Kotlin",
-    "Flutter",
+    "Kayode",
+    "HTML",
+    "Vue",
+    "ExpressJS",
+    "TypeScript",
+    "JavaScript",
+    "Cypress",
+    "Jest"
   ],
-  authors: [{ name: portfolioData.name, url: "https://www.vipuljha.com" }],
+  authors: [{ name: portfolioData.name, url: "https://portfolio-king-kaes-projects.vercel.app" }],
   creator: portfolioData.name,
   publisher: portfolioData.name,
   formatDetection: {
@@ -62,13 +59,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.vipuljha.com",
+    url: "https://portfolio-king-kaes-projects.vercel.app",
     title: `${portfolioData.name} - ${portfolioData.role}`,
     description: portfolioData.about,
     siteName: `${portfolioData.name} Portfolio`,
     images: [
       {
-        url: "https://www.vipuljha.com/images/profile.webp",
+        url: "https://portfolio-king-kaes-projects.vercel.app/images/kayode.jpg",
         width: 1200,
         height: 630,
         alt: `${portfolioData.name} - ${portfolioData.role}`,
@@ -80,7 +77,7 @@ export const metadata: Metadata = {
     title: `${portfolioData.name} - ${portfolioData.role}`,
     description: portfolioData.about,
     creator: "@lordarcadius",
-    images: ["https://www.vipuljha.com/images/profile.webp"],
+    images: ["https://portfolio-king-kaes-projects.vercel.app/images/kayode.jpg"],
   },
   robots: {
     index: true,
@@ -109,7 +106,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <link rel="icon" href="/logo.png" type="image/png" />
-        {/* <StructuredData /> */}
+        <StructuredData />
       </head>
       <body
         suppressHydrationWarning

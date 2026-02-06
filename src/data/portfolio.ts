@@ -70,16 +70,6 @@ export const portfolioData: PortfolioData = {
       url: "https://x.com/kingkae_001?s=21",
       icon: "Twitter", // Lucide might not have X yet, using Twitter as fallback or X if available in next step
     },
-    // {
-    //   platform: "Instagram",
-    //   url: "https://instagram.com/lordarcadius",
-    //   icon: "Instagram",
-    // },
-    // {
-    //   platform: "Medium",
-    //   url: "https://medium.com/@lordarcadius",
-    //   icon: "BookText", // Using BookText as a generic icon for Medium if branded one is missing
-    // },
     {
       platform: "Email",
       url: "mailto:kayode.raimi123@gmail.com",
@@ -91,7 +81,6 @@ export const portfolioData: PortfolioData = {
       "React",
       "NextJS",
       "Vue.js",
-      // "Coroutines",
     ],
     web: [
       "REST APIs",
@@ -99,7 +88,6 @@ export const portfolioData: PortfolioData = {
       "MySQL",
       "Express.js",
       "MongoDB",
-      // "Cloudflare",
       "TypeScript",
       "JavaScript",
       "HTML",
@@ -168,7 +156,7 @@ export const portfolioData: PortfolioData = {
       description:
         "A previous version of my personal portfolio website showcasing my projects, work experience, and resume before launching the further iterations built in more modern tech stack.",
       techStack: ["NextJS", "Bootstrap", "JQuery"],
-      link: "https://project.vipuljha.com/website",
+      link: "https://portfolio-king-kaes-projects.vercel.app/",
       github: "https://github.com/King-kae/",
       thumbnail: "/images/projects/portfolio.png",
     },
@@ -186,7 +174,6 @@ export const portfolioData: PortfolioData = {
       description:
         "A RESTful backend API implementing secure authentication and authorization using Passport.js, including local strategy and third-party OAuth (Google and GitHub). The service enables authenticated users to create and manage book resources via protected routes.",
       techStack: ["NodeJS", "ExpressJS", "ejs", "MongoDB"],
-      // link: "https://xdaforums.com/t/app-port-6-0-lenovo-snapit-camera-5-8-53-for-all-devices.3608065/",
       github: "https://github.com/King-kae/Authentication-and-Authorization",
       end: "backend",
       thumbnail: "/images/projects/node.png",
@@ -196,7 +183,6 @@ export const portfolioData: PortfolioData = {
       description:
         "Built scalable backend services for a real-estate platform, enabling property owners to publish listings and facilitating property search and selection for potential clients.",
       techStack: ["NodeJS", "ExpressJS", "MongoDB"], 
-      // link: "https://xdaforums.com/t/c-apps-v2-unofficial-6-0-x-cyanogen-os-capps-v2-for-cm13-and-cm13-based-roms.3254865/",
       github: "https://github.com/King-kae/Group-45-Capstone-Project-Backend",
       end: "backend",
       thumbnail: "/images/projects/node.png",

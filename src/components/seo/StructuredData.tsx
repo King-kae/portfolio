@@ -9,23 +9,18 @@ export function StructuredData() {
     name: portfolioData.name,
     jobTitle: portfolioData.role,
     description: portfolioData.about,
-    url: "https://www.vipuljha.com",
+    url: "https://portfolio-king-kaes-projects.vercel.app",
     image: "/logo.png",
     sameAs: portfolioData.social
       .filter((s) => s.platform !== "Email")
       .map((s) => s.url),
     worksFor: {
       "@type": "Organization",
-      name: "Primebook India",
+      name: "Ostivities",
     },
     knowsAbout: [
-      "Android Development",
-      "Flutter Development",
-      "Kotlin",
-      "Jetpack Compose",
-      "Mobile App Development",
-      "AOSP",
-      "Chromium",
+      "Frontend Development",
+      "Backend Development",
     ],
   };
 
@@ -34,7 +29,7 @@ export function StructuredData() {
     "@type": "WebSite",
     name: `${portfolioData.name} Portfolio`,
     description: portfolioData.about,
-    url: "https://www.vipuljha.com",
+    url: "https://portfolio-king-kaes-projects.vercel.app",
     author: {
       "@type": "Person",
       name: portfolioData.name,
