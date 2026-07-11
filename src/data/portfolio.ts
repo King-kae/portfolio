@@ -81,6 +81,9 @@ export const portfolioData: PortfolioData = {
       "React",
       "NextJS",
       "Vue.js",
+      "Nest.Js",
+      "TailwindCSS",
+      "JQuery",
     ],
     web: [
       "REST APIs",
@@ -143,6 +146,16 @@ export const portfolioData: PortfolioData = {
       hoverColor: { color: "#e20000" },
     },
     {
+      title: "NoteCode",
+      description:
+        "A collaborative code-sharing platform that allows developers to share and discuss code snippets in real-time, fostering a community of learning and collaboration.",
+      techStack: ["ReactJS", "MongoDB", "ExpressJS", "TailwindCSS", "NodeJS"],
+      link: "https://notecodeapp-frontend.vercel.app/",
+      github: "https://github.com/King-kae/notecodeapp-frontend",
+      thumbnail: "/images/projects/notecode.png",
+      end: "fullstack",
+    },
+    {
       title: "Chatter",
       description:
         "Chatter is a blogging and content-publishing platform where users can create, publish, and explore written content in a streamlined digital environment.",
@@ -150,6 +163,7 @@ export const portfolioData: PortfolioData = {
       link: "https://nextjs-chatter-teal.vercel.app/",
       github: "https://github.com/King-kae/nextjs-chatter",
       thumbnail: "/images/projects/chatter.png",
+      end: "fullstack",
     },
     {
       title: "Portfolio Website",

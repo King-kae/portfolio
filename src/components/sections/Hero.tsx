@@ -65,7 +65,7 @@ export const HeroSection = React.memo(function HeroSection() {
                 </Link>
 
                 <Link
-                  href="/files/myresume.pdf"
+                  href="/files/001-Kayode-Resume.pdf"
                   target="_blank"
                   className="w-42 px-8 py-3 border-2 border-slate-700 text-slate-300 font-bold rounded-full hover:bg-slate-800 transition-all flex items-center justify-center gap-2"
                 >
